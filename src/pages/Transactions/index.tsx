@@ -1,11 +1,11 @@
-import { SearchForm } from './components/SearchForm';
+import { SearchForm } from './components/SearchForm'
 import {
   PriceHighlight,
   TransactionsContainer,
   TransactionsTable,
-} from './styles';
-import { Header } from '../../components/Header';
-import { Summary } from '../../components/Summary';
+} from './styles'
+import { Header } from '../../components/Header'
+import { Summary } from '../../components/Summary'
 
 export function Transactions() {
   return (
@@ -37,5 +37,5 @@ export function Transactions() {
         </TransactionsTable>
       </TransactionsContainer>
     </div>
-  );
+  )
 }

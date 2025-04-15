@@ -1,12 +1,12 @@
-import js from '@eslint/js';
-import prettierConfig from 'eslint-config-prettier';
-import importPlugin from 'eslint-plugin-import';
-import prettier from 'eslint-plugin-prettier';
-import reactHooks from 'eslint-plugin-react-hooks';
-import reactRefresh from 'eslint-plugin-react-refresh';
-import unicorn from 'eslint-plugin-unicorn';
-import globals from 'globals';
-import tseslint from 'typescript-eslint';
+import js from '@eslint/js'
+import prettierConfig from 'eslint-config-prettier'
+import importPlugin from 'eslint-plugin-import'
+import prettier from 'eslint-plugin-prettier'
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
+import unicorn from 'eslint-plugin-unicorn'
+import globals from 'globals'
+import tseslint from 'typescript-eslint'
 
 export default tseslint.config(
   {
@@ -78,7 +78,7 @@ export default tseslint.config(
         {
           arrowParens: 'always',
           printWidth: 80,
-          semi: true,
+          semi: false,
           singleQuote: true,
           tabWidth: 2,
           trailingComma: 'all',
@@ -102,4 +102,4 @@ export default tseslint.config(
     },
   },
   { ignores: ['**/node_modules/', '**/dist/'] },
-);
+)
