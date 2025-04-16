@@ -29,7 +29,7 @@ export const TransactionsTable = styled.table`
   }
 `
 
-interface PriceHighlightProps {
+type PriceHighlightProps = {
   variant: 'income' | 'outcome'
 }
 

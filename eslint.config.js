@@ -84,6 +84,7 @@ export default tseslint.config(
           trailingComma: 'all',
         },
       ],
+      'unicorn/filename-case': ['error', { case: 'kebabCase' }],
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': [
         'warn',

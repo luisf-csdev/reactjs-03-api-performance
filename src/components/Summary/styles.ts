@@ -13,7 +13,7 @@ export const SummaryContainer = styled.section`
   margin-top: -5rem;
 `
 
-interface SummaryCardProps {
+type SummaryCardProps = {
   variant?: 'green'
 }
 
