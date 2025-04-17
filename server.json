@@ -15,6 +15,14 @@
       "category": "Food",
       "price": 50,
       "createdAt": "2025-04-14T21:02:04.941Z"
+    },
+    {
+      "description": "Identity Risk App",
+      "price": 20000,
+      "category": "Dev",
+      "type": "income",
+      "createdAt": "2025-04-17T00:49:59.252Z",
+      "id": 3
     }
   ]
 }

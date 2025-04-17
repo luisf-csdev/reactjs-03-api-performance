@@ -9,8 +9,17 @@ export type Transaction = {
   createdAt: string
 }
 
+type CreateTransactionInput = {
+  description: string
+  price: number
+  category: string
+  type: 'income' | 'outcome'
+}
+
 type TransactionsContextType = {
   transactions: Transaction[]
+  fetchTransactions: (query?: string) => Promise<void>
+  createTransaction: (data: CreateTransactionInput) => Promise<void>
 }
 
 export const TransactionsContext = createContext({} as TransactionsContextType)
