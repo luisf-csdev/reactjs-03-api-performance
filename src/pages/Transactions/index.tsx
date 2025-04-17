@@ -1,7 +1,7 @@
 import { Header } from '@/components/header'
 import { Summary } from '@/components/summary'
+import { useTransactionsContextSelector } from '@/contexts/transactions-context'
 import { dateFormatter, priceFormatter } from '@/utils/formatters'
-import { useTransactionsContext } from '@/contexts/transactions-context'
 import { SearchForm } from './components/search-form'
 import {
   PriceHighlight,
@@ -10,7 +10,9 @@ import {
 } from './styles'
 
 export function Transactions() {
-  const { transactions } = useTransactionsContext()
+  const transactions = useTransactionsContextSelector(
+    (context) => context.transactions,
+  )
 
   return (
     <div>
